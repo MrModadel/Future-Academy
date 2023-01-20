@@ -118,8 +118,6 @@ select {
    cursor: pointer;
 }
 .title-nav {
-   &__box {
-   }
 
    &__title {
       font-weight: 700;
@@ -208,8 +206,10 @@ select {
    }
    &__left-menu-one {
       display: none;
-      flex-direction: column;
-      max-width: 280px;
+      flex-direction: none;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 120px;
    }
 
    &__left-menu-title {
@@ -254,8 +254,6 @@ select {
       }
    }
 
-   &__menu {
-   }
 
    &__menu-title {
       font-weight: 500;
@@ -438,7 +436,7 @@ input:checked + label span .sfera {
    gap: 3px;
    .bord-menu__sp {
       width: 46px;
-      height: 6px;
+      height: 5px;
       display: block;
       background-color: #ffeef6;
    }

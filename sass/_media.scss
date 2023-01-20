@@ -27,7 +27,7 @@
    .title-nav__nav {
       display: flex;
       margin: 0px 0px 16px 0px;
-      justify-content: flex-end;
+      justify-content: center;
       gap: 80px;
    }
 }
@@ -50,18 +50,88 @@
       display: none;
    }
    .title-nav__item {
-      gap: 10px;
-   }
-   .title-nav__item-text {
-      font-size: 13px;
-   }
-   .title-nav__item-age {
-      font-size: 11px;
+      gap: 7px;
    }
    .main__left-menu-one {
       display: flex;
    }
    .main__left-menu {
       display: none;
+   }
+   .hr-left {
+      display: none;
+   }
+   .title-nav__nav {
+      justify-content: center;
+   }
+   .title-nav__item-text {
+      font-size: 11px;
+   }
+   .title-nav__item-age {
+      font-size: 10px;
+   }
+   .title-nav__item img {
+      width: 35px;
+      height: 35px;
+   }
+   .title-nav__title {
+      font-size: 26px;
+   }
+   .title-nav__item::after {
+      top: 53px;
+   }
+   .main__menu-box {
+      grid-template-columns: repeat(1, minmax(215px, 460px));
+      justify-content: center;
+   }
+   .title-nav__nav {
+      display: flex;
+      margin: 0px 0px 16px 0px;
+      justify-content: center;
+      gap: 50px;
+   }
+}
+@media (max-width: 480px) {
+   .title-nav__nav {
+      display: flex;
+      margin: 0px 0px 16px 0px;
+      justify-content: center;
+      gap: 30px;
+   }
+   .title-nav__item {
+      gap: 7px;
+   }
+   .title-nav__title {
+      font-size: 20px;
+      margin: 15px 0px 25px 0px;
+   }
+   .title-nav__item img {
+      width: 25px;
+      height: 25px;
+   }
+}
+@media (max-width: 400px) {
+   .title-nav__item {
+      gap: 5px;
+   }
+   .title-nav__item-box {
+      gap: 0;
+   }
+   .main__menu-up-a a {
+      font-size: 11px;
+   }
+}
+@media (max-width: 360px) {
+   .title-nav__nav {
+      display: flex;
+      margin: 0px 0px 16px 0px;
+      justify-content: center;
+      gap: 10px;
+   }
+   .main__menu-up {
+      gap: 5px;
+   }
+   .main__menu-box {
+      margin: 20px 0px 0px 0px;
    }
 }
