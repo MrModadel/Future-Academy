@@ -240,15 +240,19 @@ select {
          font-weight: 400;
          transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
          span {
-            box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2),
+            box-shadow:
+               0 0 0 0.2em currentColor inset,
+               0 0.2em 0.2em rgba(0, 0, 0, 0.2),
                0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
             display: inline-block;
             margin-right: 0.5em;
             vertical-align: bottom;
             width: 1.5em;
             height: 1.5em;
-            transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2),
-               box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            transition:
+               transform 0.2s cubic-bezier(0.5, 0, 0.5, 2),
+               box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+               color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
          }
       }
    }
@@ -289,7 +293,7 @@ select {
    }
 }
 input:checked + label span {
-   transform: scale(1.2);
+   transform: scale(1.2855);
 }
 label span {
    border-radius: 50%;
@@ -478,12 +482,17 @@ label:not(:last-of-type) {
 }
 
 label span {
-   box-shadow: 0 0 0 0.15em currentColor inset, 0 0.3em 0.3em rgba(0, 0, 0, 0.2), 0 0.3em 0.3em rgba(0, 0, 0, 0) inset;
+   box-shadow:
+      0 0 0 0.15em currentColor inset,
+      0 0.3em 0.3em rgba(0, 0, 0, 0.2),
+      0 0.3em 0.3em rgba(0, 0, 0, 0) inset;
    display: inline-block;
    margin-right: 0.5em;
-   width: 20px;
-   height: 20px;
-   transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+   width: 21px;
+   height: 21px;
+   transition:
+      transform 0.2s cubic-bezier(0.5, 0, 0.5, 2),
+      box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95),
       color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
@@ -502,9 +511,9 @@ input:checked + label,
 input:checked + label span {
    transition-delay: 0.4s;
 }
-
+// scale(1.2855)
 input:checked + label span {
-   transform: scale(1.2);
+   transform: scale(1.2855);
 }
 
 .worm {
@@ -519,9 +528,9 @@ input:checked + label span {
 
 .worm__segment {
    top: 85px;
-   left: -0.5px;
-   width: 0.75em;
-   height: 0.75em;
+   left: -0.677px;
+   width: 11px;
+   height: 11px;
    transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
@@ -531,8 +540,8 @@ input:checked + label span {
    background: currentColor;
    content: "";
    display: block;
-   width: 10px;
-   height: 10px;
+   width: 11px;
+   height: 11px;
 }
 
 .worm__segment:first-child:before,
